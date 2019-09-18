@@ -1,0 +1,30 @@
+{
+    "data": [
+        {
+            "type": "post-block",
+            "relationships": {
+                "question": {
+                    "data": {
+                        "type": "question",
+                        "id": "295"
+                    }
+                }
+            },
+            "id": "2620",
+            "attributes": {
+                "text": "I am great!",
+                "id": 2620
+            }
+        }
+    ],
+    "included": [
+        {
+            "type": "question",
+            "id": "295",
+            "attributes": {
+                "text": "How are you?",
+                "id": 295
+            }
+        }
+    ]
+}

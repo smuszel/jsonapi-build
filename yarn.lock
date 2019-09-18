@@ -2375,6 +2375,11 @@ is-glob@^4.0.0:
   dependencies:
     is-extglob "^2.1.1"
 
+is-json@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/is-json/-/is-json-2.0.1.tgz#6be166d144828a131d686891b983df62c39491ff"
+  integrity sha1-a+Fm0USCihMdaGiRuYPfYsOUkf8=
+
 is-number@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-3.0.0.tgz#24fd6201a4782cf50561c810276afc7d12d71195"
@@ -2468,6 +2473,13 @@ jsesc@^2.5.1:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-2.5.2.tgz#80564d2e483dacf6e8ef209650a67df3f0c283a4"
   integrity sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==
+
+json-api-normalizer@^0.4.16:
+  version "0.4.16"
+  resolved "https://registry.yarnpkg.com/json-api-normalizer/-/json-api-normalizer-0.4.16.tgz#43fd741e346ec2d934cd00f0a9611e651a20533f"
+  integrity sha512-ZWhN23gmauEjLXdV2Gdm7PhoGy67zCyO7hIhrhrRMEqzfCYm1U4fexNZHXqyRYDeU/ougwhW12ImEz3s907cuA==
+  dependencies:
+    lodash "^4.17.15"
 
 json-parse-better-errors@^1.0.2:
   version "1.0.2"
@@ -2571,7 +2583,7 @@ locate-path@^3.0.0:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
 
-lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.3:
+lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.15, lodash@^4.17.3:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
@@ -3591,6 +3603,11 @@ readdirp@^2.2.1:
     graceful-fs "^4.1.11"
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
+
+redux-object@^0.5.10:
+  version "0.5.10"
+  resolved "https://registry.yarnpkg.com/redux-object/-/redux-object-0.5.10.tgz#20013b59f946b4a7262a69cedf83feb5dc3cae9b"
+  integrity sha512-MzAPCIvJW5jtVW1JiIQTGJHi38cSKzrLStszInVcPspjIyvzZDsZ4RWoGzJl57GsDN1ftSNdL9NcaPAY08mxQQ==
 
 regex-not@^1.0.0, regex-not@^1.0.2:
   version "1.0.2"
