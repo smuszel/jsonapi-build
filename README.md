@@ -1,1 +1,1 @@
-### [Demo](https://smuszel.github.io/jsonapi-build/)
+### [Demo](https://smuszel.github.io/jsonapi-build/index.html)
