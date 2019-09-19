@@ -53,7 +53,6 @@ const tryParse = str => {
 
 export default () => {
     const [dataString, setDataString] = React.useState('');
-    debugger
 
     const show = () => {
         const jsonInput = tryParse(dataString);
