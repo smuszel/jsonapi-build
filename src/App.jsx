@@ -1,7 +1,8 @@
 import React from 'react';
 import norm from 'json-api-normalizer';
 import build from 'redux-object';
-const ex = `
+
+const exampleString = `
 {
     "data": [
         {
@@ -51,28 +52,41 @@ const tryParse = str => {
 }
 
 export default () => {
-    const [t1, st1] = React.useState('');
-    const [t2, st2] = React.useState('');
+    const [dataString, setDataString] = React.useState('');
+    debugger
 
-    const j = tryParse(t2);
-    const n = j && norm(j);
-    const b = j && build(n, t1);
+    const show = () => {
+        const jsonInput = tryParse(dataString);
+        if (jsonInput) {
+            const normalized = norm(jsonInput);
+            let maxLen = 0;
+            let maxBuild = null
+            Object.keys(normalized).forEach(k => {
+                const currentBuild = build(normalized, k);
+                const currentLength = JSON.stringify(currentBuild).length;
+                if (currentLength > maxLen) {
+                    maxLen = currentLength;
+                    maxBuild = currentBuild;
+                }
+            });
+            
+            console.log('input', jsonInput);
+            console.log('output', maxBuild);
+        } else {
+            console.log('not parsable input');
+        }
+    }
 
     return (
         <div>
             <label style={{ display: 'block'}}>
-                Main resource name
-                <input type="text" onChange={ev => st1(ev.target.value)} value={t1} />
-            </label>
-            <label style={{ display: 'block'}}>
                 Data
-                <textarea type="text" onChange={ev => st2(ev.target.value)} value={t2} />
+                <textarea type="text" onChange={ev => setDataString(ev.target.value)} value={dataString} />
             </label>
             <button onClick={() => {
-                st1('postBlock')
-                st2(ex)
+                setDataString(exampleString)
             }}>Example</button>
-            <button onClick={() => console.log(j ? b : 'not JSON input')}>Log to console</button>
+            <button onClick={show}>Log to console</button>
         </div>
     );
 };
