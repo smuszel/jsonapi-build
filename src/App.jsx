@@ -45,7 +45,7 @@ const tryParse = str => {
 
     try {
         res = JSON.parse(str);
-    } catch {
+    } catch (err) {
     }
 
     return res;
